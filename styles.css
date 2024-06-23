@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #282c34;
+    color: white;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #3a3f47;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.labels {
+
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.labels span {
+    padding-left: 25px;
+    padding-right: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    /* position: fixed; */
+    width: 95px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 1s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+ul li {
+    font-size: 16px;
+    background: #444;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.input-group input {
+    padding: 5px;
+    width: 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.countdown-container .input-group {
+    margin-bottom: 10px;
+}
+
+.countdown-container label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.countdown-container input {
+    padding: 5px;
+    width: 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.countdown-container button {
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 1s ease;
+}
+
+.countdown-container button:hover {
+    background-color: #21a1f1;
+}
+
+.countdown-container #countdown-display {
+    font-size: 48px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}

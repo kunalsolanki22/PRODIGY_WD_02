@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="stopwatch">
+            <div class="labels">
+                <span>H</span>
+                <span>M</span>
+                <span>S</span>
+                <span>mS</span>
+            </div>
+            <div id="display">00:00:00:000</div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+                <button id="lap">Lap</button>
+            </div>
+        </div>
+        <div class="countdown-container">
+            <div class="input-group">
+                <label for="countdown-input">Countdown (seconds):</label>
+                <input type="number" id="countdown-input" min="1" value="10">
+            </div>
+            <button id="start-countdown">Start Countdown</button>
+            <div id="countdown-display">00:00:00</div>
+        </div>
+        <div class="laps-container">
+            <ul id="laps"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
